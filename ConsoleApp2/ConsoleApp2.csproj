@@ -43,10 +43,9 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="exception\CepInvalidoException.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="testCep\Class1.cs" />
+    <Compile Include="verification\CepValidacao.cs" />
     <Compile Include="verification\Verification.cs" />
   </ItemGroup>
   <ItemGroup>

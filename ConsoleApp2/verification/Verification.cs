@@ -2,7 +2,10 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
+using System.Text.RegularExpressions;
 using System.Threading.Tasks;
+
+
 
 namespace ConsoleApp2.verification
 {
@@ -13,16 +16,16 @@ namespace ConsoleApp2.verification
         public void CepVerification()
         {
             //Console.Write("Digite seu cep: ");
-           // string numerocep = Console.ReadLine();
+            // string numerocep = Console.ReadLine();
 
             int contador = 0;
-            foreach (var item in this.Cep)    
+            foreach (var item in this.Cep)
             {
                 bool valor = char.IsDigit(item);
 
                 if (valor == true)
-                { 
-                contador++;
+                {
+                    contador++;
                 }
             }
 
@@ -35,4 +38,3 @@ namespace ConsoleApp2.verification
         }
     }
 }
-// ver se tem caracteres especial faz o tratamento a valida  ou remova os caracteres

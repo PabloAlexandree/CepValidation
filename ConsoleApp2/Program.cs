@@ -1,13 +1,21 @@
 ﻿using ConsoleApp2.verification;
-using System.Security;
 
-
-public class Program
+class program
 {
-    public static void Main()
+    static void Main(string[] args)
     {
-        Verification p = new Verification();
-        p.Cep = "123456-78";  ;
-        p.CepVerification();
+        cepvalidacao Exemplo1 = new cepvalidacao();
+        Exemplo1.cep = "26290-717";
+        Exemplo1.verifica();
     }
 }
+
+//class program2
+//{
+//    static void Main(string[] args)
+//    {
+//        Verification exemplo2 = new Verification();
+//        exemplo2.Cep = "26.290-717";
+//        exemplo2.CepVerification();
+//    }
+//}
